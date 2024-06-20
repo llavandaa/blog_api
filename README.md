@@ -39,31 +39,33 @@
   
 ### Создание поста
 
-URL: /api/posts
+- **URL:** `/api/posts`
 
-Метод: POST
+- **Метод:** POST
 
-Тело запроса: JSON
+- **Тело запроса:** JSON
 
   ```json
   {
-      "username": "exampleuser",
-      "email": "user@example.com"
+    "title": "Название поста",
+    "content": "Содержание поста",
+    "user_id": "exampleuser2"
   }
   ```
+
 ### Получение поста
 
-URL: /api/posts/<post_id>
+- **URL:** `/api/posts/<post_id>`
 
-Метод: GET
+- **Метод:** GET
 
 ### Обновление поста
 
-URL: /api/posts/<post_id>
+- **URL:** `/api/posts/<post_id>`
 
-Метод: PUT
+- **Метод:** PUT
 
-Тело запроса: JSON
+- **Тело запроса:** JSON
 
   ```json
   {
@@ -71,8 +73,9 @@ URL: /api/posts/<post_id>
       "content": "This is an updated post."
   }
   ```
+
 ### Удаление поста
 
-URL: /api/posts/<post_id>
+- **URL:** `/api/posts/<post_id>`
 
-Метод: DELETE
+- **Метод:** DELETE
